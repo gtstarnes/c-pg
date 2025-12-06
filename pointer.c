@@ -1,9 +1,10 @@
 #include <stdio.h>
 
+
 int main() {
-    int a = 2;
-    int *b = &a;
-    *b += 1;
-    printf("This is a now: %d", a);
+    int num = 2;
+    int * sum = &num;
+    *sum += 2;
+    printf("Num: %d", num);
     return 0;
 }
