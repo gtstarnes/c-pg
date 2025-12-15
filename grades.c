@@ -12,7 +12,13 @@ int main() {
             70, 75, 80
         }
     };
-    printf("Student grades: %d", nums[1][2]);
+
+    int students = 3;
+    int grades = 3;
+
+    for (int i = 0; i < students; i++) {
+        printf("Student's Highest Grade: %d\n", nums[i][2]);
+    }
 
     return 0;
 }
