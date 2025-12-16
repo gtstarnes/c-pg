@@ -11,7 +11,7 @@ float calcAvg(int grades[], int size) {
 void printAvgs(int grades[][3]) {
     for (int i = 0; i < 3; i++) {
         float classAvg = calcAvg(grades[i], 3);
-        printf("The Student's avg is: %f.\n", classAvg);
+        printf("The Student's avg is: %.2f.\n", classAvg);
     }
 }
 int main() {
