@@ -8,16 +8,19 @@ float calcAvg(int grades[], int size) {
     return gradeSum / size;
 }
 
+void printAvgs(int grades[][3]) {
+    for (int i = 0; i < 3; i++) {
+        float classAvg = calcAvg(grades[i], 3);
+        printf("The Student's avg is: %f.\n", classAvg);
+    }
+}
 int main() {
     int grades[3][3] = {
         {90, 95, 100},
         {80, 85, 90},
         {70, 75, 80}
     };
+    printAvgs(grades);
 
-    for (int i = 0; i < 3; i++) {
-        float classAvg = calcAvg(grades[i], 3);
-        printf("The Student's avg is: %f.\n", classAvg);
-    }
     return 0;
 }
