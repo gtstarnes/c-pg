@@ -9,6 +9,8 @@ void guessNum(int num) {
 }
 
 int main() {
-
+    guessNum(400);
+    guessNum(500);
+    guessNum(555);
     return 0;
 }
