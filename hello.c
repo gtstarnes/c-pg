@@ -4,6 +4,6 @@
 
 int main() {
     char name[20] = "Jeff";
-    printf("Hello, %s", name);
+    printf("Hello, %d", strlen(name));
     return 0;
 }
