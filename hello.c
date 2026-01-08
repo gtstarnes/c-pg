@@ -3,7 +3,8 @@
 
 
 int main() {
-    char name[20] = "Jeff";
-    printf("Hello, %d", strlen(name));
+    char name[20] = "Jeff ";
+    char last[10] = "Smith";
+    printf("Hello, %s", strcat(name, last));
     return 0;
 }
