@@ -22,9 +22,10 @@ void display() {
         printf("%d -> ", current->data);
         current = current->next;
     }
-    print("List is empty");
+    printf("List is empty\n");
 }
 
 int main() {
+    display();
     return 0;
 }
