@@ -26,5 +26,9 @@ void display(struct Node* n){
 
 int main() {
     display(head);
+    insert(1);
+    insert(2);
+    insert(3);
+    display(head);
     return 0;
 }
