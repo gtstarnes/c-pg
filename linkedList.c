@@ -15,9 +15,9 @@ void insert(int new_data) {
     head = new_node;
 }
 
-void display(){
+void display(struct Node* n){
     struct Node* current = head; 
-    while(current->next != NULL){
+    while(current!= NULL){
         printf("%d -> ", current->data);
         current = current->next;
     }
@@ -25,5 +25,6 @@ void display(){
 }
 
 int main() {
+    display(head);
     return 0;
 }
