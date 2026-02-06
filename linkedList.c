@@ -24,6 +24,14 @@ void display() {
     printf("Null\n");
 }
 
+void clear(){
+    struct Node* temp;
+    while(head != NULL) {
+        temp = head;
+        head = head->next;
+        free(temp);
+    }
+}
 
 int main() {
 
