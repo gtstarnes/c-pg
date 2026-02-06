@@ -33,6 +33,12 @@ void clear(){
     }
 }
 
+void populate(int n) {
+    for (int i = 0; i < n; i++) {
+        insert(i);
+    }
+}
+
 int main() {
     display();
     return 0;
