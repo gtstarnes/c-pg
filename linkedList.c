@@ -34,6 +34,6 @@ void clear(){
 }
 
 int main() {
-
+    display();
     return 0;
 }
