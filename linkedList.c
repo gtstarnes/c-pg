@@ -31,6 +31,7 @@ void clear(){
         head = head->next;
         free(temp);
     }
+    printf("data cleared");
 }
 
 void populate(int n) {
@@ -41,5 +42,8 @@ void populate(int n) {
 
 int main() {
     display();
+    populate(4);
+    display();
+    clear();
     return 0;
 }
