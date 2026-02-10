@@ -28,5 +28,6 @@ void display(){
 
 
 int main() {
+    display();
     return 0;
 }
