@@ -3,7 +3,6 @@
 
 struct Node {
     int data;
-    struct Node* prev;
     struct Node* next;
 };
 
@@ -25,6 +24,27 @@ void display(){
     printf("NULL\n");
 }
 
+void delete(int n) {
+    struct Node* current = head;
+    struct Node* prev = NULL;
+
+    if (head->data == n){
+        head = head->next; 
+        return;
+    }
+    
+    while(current != NULL && current->data != n){
+        prev = current;
+        current = current->next;
+    }
+
+    if (current == NULL) {
+        printf("Target not found");
+    } else {
+        prev->next = current->next;
+    }
+}
+
 
 int main() {
     display();
@@ -32,5 +52,6 @@ int main() {
         insert(n);
     }
     display();
+    delete(5);
     return 0;
 }
