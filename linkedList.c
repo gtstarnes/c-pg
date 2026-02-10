@@ -52,6 +52,7 @@ int main() {
         insert(n);
     }
     display();
-    delete(5);
+    delete(2);
+    display();
     return 0;
 }
