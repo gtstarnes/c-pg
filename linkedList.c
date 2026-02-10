@@ -17,6 +17,15 @@ void insert(int new_data){
     head = new_node;
 }
 
+void display(){
+    struct Node* current_node = head;
+    while(current_node != NULL) {
+        printf("%d -> ", current_node->data);
+        current_node = current_node->next;
+    }
+    printf("NULL\n");
+}
+
 
 int main() {
     return 0;
