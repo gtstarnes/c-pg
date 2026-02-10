@@ -12,8 +12,7 @@ struct Node* head = NULL;
 void insert(int new_data){
     struct Node* new_node = (struct Node*)malloc(sizeof(struct Node));
     new_node->data = new_data;
-    new_node->next = NULL;
-    new_node->prev = head;
+    new_node->next = head;
     head = new_node;
 }
 
@@ -28,6 +27,10 @@ void display(){
 
 
 int main() {
+    display();
+    for (int n = 1; n <=3; n++){
+        insert(n);
+    }
     display();
     return 0;
 }
