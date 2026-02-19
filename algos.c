@@ -1,23 +1,21 @@
 #include <stdio.h>
 
-int getMin(int a[]){
-    int min = a[0];
-    int len = sizeof(a) / sizeof(a[0]);
-    for (int i = 0; i < len; i++) {
-        if (a[i] < min) {
-            min = a[i];
+int getMin(int x[], int len){
+    int min = x[0];
+    for (int i = 1; i < len; i++) {
+        if (x[i] < min) {
+            min = x[i];
         }
     }
 
     return min;
 }
 
-int getMax(int a[]){
-    int max = a[0];
-    int len = sizeof(a) / sizeof(a[0]);
-    for (int i = 0; i < len; i++) {
-        if (a[i] > max) {
-            max = a[i];
+int getMax(int x[], int len){
+    int max = x[0];
+    for (int i = 1; i < len; i++) {
+        if (x[i] > max) {
+            max = x[i];
         }
     }
 
@@ -29,4 +27,8 @@ int main() {
     for (int i = 0; i < 50; i++) {
         a[i] = i + 1;
     }
+    int len = sizeof(a) / sizeof(a[0]);
+
+    printf("The Max is: %d\n", getMax(a, len));
+    printf("The Min is: %d\n", getMin(a, len));
 }
